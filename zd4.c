@@ -406,6 +406,7 @@ int main() {
             headers[i] = readListFromFile(files[i]);
             if (headers[i] == NULL) {
                 printf("Pogreska prilikom citanja liste iz datoteke!");
+				deleteList(headers);
                 return 1;
             }
         }
